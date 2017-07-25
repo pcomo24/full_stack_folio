@@ -1,0 +1,29 @@
+{
+  "name": "exp_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_css": "lessc public/index.less public/main.css",
+    "watch": "watch-run -p 'public/**/*.less' lessc public/index.less public/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^2.0.2",
+    "aws-sdk": "^2.89.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "gumshoe": "github:cferdinandi/gumshoe",
+    "hbs": "^4.0.1",
+    "less": "^2.7.2",
+    "nodemailer": "^4.0.1",
+    "nodemon": "^1.11.0",
+    "smooth-scroll": "^11.1.0",
+    "watch-run": "^1.2.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -1,0 +1,184 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+h3,
+.head-text {
+  color: #91C499;
+  font-family: 'Oswald', sans-serif;
+}
+h4 {
+  color: #91C499;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.header-bground {
+  position: absolute;
+  background-color: #91C499;
+  height: 35%;
+  width: 50%;
+  top: 50%;
+  left: 25%;
+}
+.plaxbg-main {
+  width: 100%;
+  background: #000;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.plaxbg-main .plax-img {
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("../public/images/usa-1641563.jpg");
+  border-top: solid #91C499 20px;
+  border-left: solid #91C499 20px;
+  border-right: solid #91C499 20px;
+  background-attachment: scroll;
+  background-position: center;
+}
+.plaxbg-main .plax-credit {
+  max-width: 100%;
+  background-color: #91C499;
+  height: auto;
+  padding: 20px;
+}
+.plaxbg-main .plax-credit h2,
+.plaxbg-main .plax-credit p {
+  position: relative;
+}
+.center-text {
+  text-align: center;
+}
+.top-margin-10 {
+  margin-top: 25em;
+}
+.top-margin {
+  margin-top: 2em;
+}
+.rounded {
+  border-radius: 1em;
+}
+.white_text {
+  font-family: 'Molle', cursive;
+  color: white;
+  background-color: none;
+}
+.mov-title {
+  font-family: 'Coda', cursive;
+}
+.mov-sub {
+  color: #000000;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 0.5em;
+  display: inline;
+}
+.mov-subHead {
+  color: #000000;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  display: inline;
+  font-size: 1em;
+  font-weight: 900;
+}
+.text-content {
+  font-family: 'Cutive Mono', monospace;
+}
+.col-2 {
+  background-color: #000;
+}
+.col-8 {
+  padding: 0 20px 0 20px;
+}
+.bordered {
+  border-left: dashed 1px white;
+  border-right: dashed 1px white;
+}
+.list {
+  list-style-type: none;
+  display: inline;
+}
+nav {
+  top: 5em;
+  left: 2em;
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+}
+.active {
+  color: darkgreen;
+}
+.parallelogram {
+  width: 10px;
+  height: 25px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: black;
+  display: inline;
+}
+.stripes {
+  height: 10px;
+  background-image: url("../public/images/stripe_a2d49144d08e9f809c52d7a48dae6cbe.png");
+}
+.project-style {
+  border: solid white 2px;
+  color: white;
+}
+.project-background {
+  background: #000;
+}
+.icon-size {
+  font-size: 5vw;
+}
+@media (max-width: 768px) {
+  .icon-size {
+    font-size: 10vw;
+  }
+}
+bottom-pad {
+  padding-bottom: 2em;
+}
+.blacknwhite {
+  -webkit-filter: grayscale(75%);
+  filter: hue-rotate(90deg);
+}
+.blacknwhite :hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.icon-link {
+  color: white;
+  text-decoration: none;
+}
+.icon-link :hover {
+  color: #91C499;
+}
+.icon-padding {
+  padding: 1vw;
+}
+.project-title {
+  font-size: 3vw;
+  padding: 1vw;
+}
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 7vw;
+  }
+}
+.icon-title {
+  font-size: 2vw;
+  padding: .5vw;
+}
+@media (max-width: 768px) {
+  .icon-title {
+    font-size: 5vw;
+  }
+}
+.full-row {
+  width: 100%;
+}

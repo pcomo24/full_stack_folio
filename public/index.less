@@ -1,0 +1,213 @@
+@color-primary-0: #28794C;	/* Main Primary color */
+@color-primary-1: #00DB5F;
+@color-primary-2: #07A74C;
+@color-primary-3: #2F4C3C;
+@color-primary-4: #000;
+
+@color-secondary-1-0: #AA9439;	/* Main Secondary color (1) */
+@color-secondary-1-1: #FFCD00;
+@color-secondary-1-2: #91C499;
+@color-secondary-1-3: #6A6242;
+@color-secondary-1-4: #2A2A27;
+
+@color-secondary-2-0: #532B72;	/* Main Secondary color (2) */
+@color-secondary-2-1: #7A03D5;
+@color-secondary-2-2: #60109D;
+@color-secondary-2-3: #3C2E47;
+@color-secondary-2-4: #1C1A1C;
+@header-font: 'Yanone Kaffeesatz', sans-serif;
+@text-font-2: 'Open Sans', sans-serif;
+@text-font: 'Inconsolata', monospace;
+@text-font-3: 'Cutive Mono', monospace;
+@section-font: 'Oswald', sans-serif;
+@title-font: 'Coda', cursive;
+
+
+h3, .head-text {
+  color: @color-secondary-1-2;
+  font-family: @section-font;
+}
+h4 {
+  color: @color-secondary-1-2;
+  font-family: @header-font;
+}
+.header-bground {
+  position: absolute;
+  background-color: @color-secondary-1-2;
+  height: 35%;
+  width: 50%;
+  top: 50%;
+  left: 25%;
+}
+.plaxbg-main {
+  width: 100%;
+  background: @color-primary-4;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .plax-img {
+    max-width: 100%;
+    height: 100vh;
+    background-image: url("../public/images/usa-1641563.jpg");
+    border-top: solid @color-secondary-1-2 20px;
+    border-left: solid @color-secondary-1-2 20px;
+    border-right: solid @color-secondary-1-2 20px;
+    background-attachment: scroll;
+    background-position: center;
+  }
+  .plax-credit {
+    max-width: 100%;
+    background-color: @color-secondary-1-2;
+    height: auto;
+    padding: 20px;
+    h2, p {
+      position: relative;
+    }
+  }
+}
+.center-text {
+  text-align: center;
+}
+.top-margin-10 {
+  margin-top: 25em;
+}
+
+.top-margin {
+  margin-top: 2em;
+}
+
+.rounded {
+  border-radius: 1em / 1em;
+}
+
+.white_text {
+  font-family: 'Molle', cursive;
+  color: white;
+  background-color: none;
+}
+.mov-title {
+  font-family: @title-font;
+}
+.mov-sub {
+  color: #000000;
+  font-family: @header-font;
+  font-size: 0.5em;
+  display: inline;
+}
+.mov-subHead {
+  color: #000000;
+  font-family: @header-font;
+  display: inline;
+  font-size: 1em;
+  font-weight: 900;
+}
+.text-content {
+  font-family: @text-font-3;
+}
+.col-2 {
+  background-color: @color-primary-4;
+}
+.col-8 {
+  padding: 0 20px 0 20px;
+}
+.bordered {
+  border-left: dashed 1px white;
+  border-right: dashed 1px white;
+}
+.list {
+  list-style-type: none;
+  display: inline;
+}
+nav {
+  top: 5em;
+  left: 2em;
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+}
+.active {
+  color: darkgreen;
+}
+
+
+.parallelogram {
+  width: 10px;
+  height: 25px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: black;
+  display: inline;
+}
+
+.stripes {
+  height: 10px;
+  background-image: url("../public/images/stripe_a2d49144d08e9f809c52d7a48dae6cbe.png");
+}
+.project-style {
+  border: solid white 2px;
+  color: white;
+}
+.project-background {
+  background: @color-primary-4;
+}
+
+.icon-size {
+  font-size: 5vw;
+  @media(max-width: 768px) {
+    font-size: 10vw;
+  }
+}
+
+bottom-pad {
+  padding-bottom: 2em;
+}
+
+.blacknwhite {
+  -webkit-filter: grayscale(75%);
+  filter: hue-rotate(90deg);
+  :hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+
+.icon-link {
+  color: white;
+  text-decoration: none;
+  :hover {
+    color: @color-secondary-1-2;
+  }
+}
+
+.icon-padding {
+  padding: 1vw;
+}
+
+.project-title {
+  font-size: 3vw;
+  padding: 1vw;
+  @media(max-width: 768px){
+    font-size: 7vw;
+  }
+}
+.icon-title {
+  font-size: 2vw;
+  padding: .5vw;
+  @media(max-width: 768px) {
+    font-size: 5vw;
+  }
+}
+.full-row {
+  width: 100%;
+}
+.description-pad {
+  0 20px;
+}

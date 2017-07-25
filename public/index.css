@@ -1,0 +1,74 @@
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+h3,
+.head-text {
+  color: #28794C;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h4 {
+  color: #00DB5F;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.header-bground {
+  position: absolute;
+  background-color: #AA9439;
+  height: 35%;
+  width: 50%;
+  top: 50%;
+  left: 25%;
+}
+.plaxbg-main {
+  width: 100%;
+  background: #2F4C3C;
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90%;
+  border: solid #FFCD00 20px;
+}
+.center-text {
+  text-align: center;
+}
+.top-margin-10 {
+  margin-top: 25em;
+}
+.top-margin {
+  margin-top: 2em;
+}
+.rounded {
+  border-radius: 1em;
+}
+#modal- .white_text {
+  font-family: 'Molle', cursive;
+  color: white;
+  background-color: none;
+}
+.blue {
+  background-color: #4ca0f5;
+}
+.bordered {
+  border-left: dashed 1px white;
+  border-right: dashed 1px white;
+}
+.list {
+  list-style-type: none;
+  display: inline;
+}
+nav {
+  top: 5em;
+  left: 2em;
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+}
+.active {
+  color: darkgreen;
+}
