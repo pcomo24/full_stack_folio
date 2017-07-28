@@ -1,23 +1,18 @@
-/* Main Primary color */
-/* Main Secondary color (1) */
-/* Main Secondary color (2) */
 h3,
 .head-text {
   color: #91C499;
   font-family: 'Oswald', sans-serif;
 }
-h4 {
-  color: #91C499;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-}
+/* save incase have issues with video loading times and need backup image
 .header-bground {
   position: absolute;
-  background-color: #91C499;
+  background-color: @color-secondary-1-2;
   height: 35%;
   width: 50%;
   top: 50%;
   left: 25%;
 }
+*/
 .plaxbg-main {
   width: 100%;
   background: #000;
@@ -47,22 +42,8 @@ h4 {
 .plaxbg-main .plax-credit p {
   position: relative;
 }
-.center-text {
-  text-align: center;
-}
-.top-margin-10 {
-  margin-top: 25em;
-}
-.top-margin {
-  margin-top: 2em;
-}
 .rounded {
   border-radius: 1em;
-}
-.white_text {
-  font-family: 'Molle', cursive;
-  color: white;
-  background-color: none;
 }
 .mov-title {
   font-family: 'Coda', cursive;
@@ -89,38 +70,35 @@ h4 {
 .col-8 {
   padding: 0 20px 0 20px;
 }
-.bordered {
-  border-left: dashed 1px white;
-  border-right: dashed 1px white;
-}
-.list {
-  list-style-type: none;
-  display: inline;
-}
 nav {
-  top: 5em;
-  left: 2em;
+  width: 10%;
+  background-color: #000000;
+  padding: 2vh 2vw;
   position: fixed;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  top: 50%;
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
 }
 nav a {
+  color: white;
+  font-family: 'Oswald', sans-serif;
   display: block;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  nav a {
+    display: none;
+  }
+}
+/* class thats activated on scrollspy */
 .active {
-  color: darkgreen;
+  color: #91C499;
+  list-style-type: circle;
 }
-.parallelogram {
-  width: 10px;
-  height: 25px;
-  -webkit-transform: skew(20deg);
-  -moz-transform: skew(20deg);
-  -o-transform: skew(20deg);
-  background: black;
-  display: inline;
-}
+/* img for divided sections */
 .stripes {
   height: 10px;
   background-image: url("../public/images/stripe_a2d49144d08e9f809c52d7a48dae6cbe.png");
@@ -140,16 +118,9 @@ nav a {
     font-size: 10vw;
   }
 }
-bottom-pad {
-  padding-bottom: 2em;
-}
 .blacknwhite {
-  -webkit-filter: grayscale(75%);
+  -webkit-filter: hue-rotate(90deg);
   filter: hue-rotate(90deg);
-}
-.blacknwhite :hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 .icon-link {
   color: white;
@@ -181,4 +152,61 @@ bottom-pad {
 }
 .full-row {
   width: 100%;
+}
+.text-pad {
+  padding: 1vh 5vw;
+}
+.proj-pad {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+input,
+textarea {
+  width: 100%;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  background-color: #000;
+}
+input :focus,
+textarea :focus {
+  box-shadow: none;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  background-color: #000;
+}
+.form-padding {
+  padding: 7vw;
+}
+input[type=submit] {
+  cursor: pointer;
+  margin: 0 auto;
+  width: 10vw;
+  height: 10vh;
+  border: 2px solid white;
+  border-radius: 0;
+  align-content: center;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  input[type=submit] {
+    width: auto;
+    height: auto;
+  }
+}
+.submit-div {
+  display: block;
+  padding-top: 5vh;
+}
+.credit-style {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 10px;
+}
+#dc-link {
+  color: #91C499;
 }

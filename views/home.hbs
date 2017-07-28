@@ -17,28 +17,38 @@
     <link rel="stylesheet" href="../public/mfizz/font-mfizz.css">
     <!--devicons-->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="public/flaticon-font/flaticon.css">
     <!-- Animations -->
-    <script src="../smooth/smooth-scroll.js"></script>
-    <script src="../gumshoe/gumshoe.js"></script>
-    <script src="../anime/anime.js"></script>
-    <script src="../menuspy/menuspy.js"></script>
+    <script src="../public/sweet-scroll.min.js"></script>
+    <script src="../public/menuspy.js"></script>
 </head>
 <body>
     <!-- navbar -->
-    <nav data-gumshoe id="mainNav" class="head-text">
-        <a data-scroll href="#home">Top</a>
-        <a data-scroll href="#aboutme">About</a>
-        <a data-scroll href="#projects">Projects</a>
-        <a data-scroll id="colorContact" href="#contact">Contact/Connect</a>
-    </nav>
-    <!--plax background -->
-    <div  class="plaxbg-main">
+    <div id="main-header">
+        <nav>
+            <ul>
+                <li><a href="#poster" data-scroll>TOP</a></li>
+                <li><a href="#home" data-scroll>TITLE</a></li>
+                <li><a href="#aboutme" data-scroll>ABOUT</a></li>
+                <li><a href="#projects" data-scroll>PROJECTS</a></li>
+                <li><a href="#contact" data-scroll>CONTACT/CONNECT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!--video background -->
+    <div  class="plaxbg-main" id="poster">
         <div class="row">
             <div class="col col-2"></div>
             <div class="col col-8 project-background project-style">
                 <div class="row full-row">
                     <div class="col col-12">
-                        <div class="plax-img push-center"></div>
+                        <div class="push-center">
+                            <video loop muted autoplay>
+                                <source src="../public/video/00038.mp4" type="video/mp4">
+                            </video>
+                        </div>
                         <div class="plax-credit push-center">
                             <h2 class="mov-title" id="home">Full-Stack: A Digital Portfolio</h2>
                             <p class="mov-sub">developed by</p>
@@ -64,24 +74,25 @@
             <div class="col col-2"></div>
         </div>
         <div id="aboutme" class="row">
-            <div class="col col-2 center-text"></div>
-            <div class="col col-8 center-text project-style">
+            <div class="col col-2 text-center"></div>
+            <div class="col col-8 text-center project-style">
                 <div class="row">
-                    <div class="col col-12">
+                    <div class="col col-12 text-pad">
                         <h3 class="head-text mov-title">ABOUT</h3>
-                        <p class="text-content">My name is Paul Como. I am a former college athlete, with a B.S. in
-                            Kinesiology. My journey to web development began one day when I discovered the code editor
-                            for styling my Tumblr page and was fascinated by it.<br>After spending the next week doing
-                            HTML and CSS tutorials, I realized I had a real appreciation for code and I started
-                            searching for more in depth learning materials.  In that time, I stumbled across, and ended
-                            up enrolling in DigitalCrafts, a fully-immersive coding bootcamp in Houston, which I will
-                            graduate from in August 2017.<br>Besides programming, I also enjoy making music in Ableton
-                            Live, exercising(most weeks), and cooking.
+                        <p class="text-content">My name is Paul Como.  I am a former college athlete, with a B.S. in
+                            Kinesiology.  My journey to web development began one day when I discovered the code editor
+                            for styling a Tumblr page and found myself oddly intrigued.<br>After spending
+                            the next week doing HTML and CSS tutorials, I realized I had a real appreciation for code,
+                            and I started searching for more in depth learning materials.  That search led me to
+                            <a href="http://www.digitalcrafts.com/" target="_blank" rel="noreferrer noopener" id="dc-link">
+                                Digital Crafts</a>, a fully-immersive coding bootcamp in Houston, which I will graduate
+                            from in August 2017.<br>Besides programming, I also enjoy making music in Ableton Live,
+                            exercising(most weeks), and cooking.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col col-2 center-text"></div>
+            <div class="col col-2 text-center"></div>
         </div>
     </div>
     <!--projects section-->
@@ -96,17 +107,17 @@
     </div>
     <div id="projects" class="row">
         <div class="col col-2"></div>
-        <div class="col col-8 center-text project-background project-style">
+        <div class="col col-8 text-center project-background project-style">
             <div class="project-style">
                 <div class="row">
-                    <div class="col col-12 center-text project-background">
-                        <h3 class="project-title push-middle head-text">Project#1: What The Flick</h3>
+                    <div class="col col-12 text-center project-background proj-pad">
+                        <h3 class="project-title push-middle head-text">Project #1: What The Flick</h3>
                     </div>
                 </div>
             </div>
             <div class="row project-style">
                 <!-- Technology -->
-                <div class="col col-3 center-text project-style project-background icon-padding">
+                <div class="col col-3 text-center project-style project-background icon-padding">
                     <div class="row">
                         <div class="col col-12 head-text icon-title">TECHNOLOGY</div>
                     </div>
@@ -117,8 +128,12 @@
                             <div class="row icon-size around">
                                 <div class="col col-12 push-center">
                                     <div class="row">
-                                        <div class="col col-6 push-center icon-padding"><i class="devicon-javascript-plain"></i></div>
-                                        <div class="col col-6 push-center icon-padding"><i class="devicon-less-plain-wordmark"></i></div>
+                                        <div class="col col-6 push-center icon-padding">
+                                            <i class="devicon-javascript-plain"></i>
+                                        </div>
+                                        <div class="col col-6 push-center icon-padding">
+                                            <i class="devicon-less-plain-wordmark"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -143,13 +158,13 @@
                     </div>
                 </div>
                 <!-- Screenshot -->
-                <div class="col col-6 center-text project-background push-middle icon-padding">
+                <div class="col col-6 text-center project-background push-middle icon-padding">
                     <a href="https://whattheflick.info" class="icon-link" target="_blank" rel="noopener noreferrer">
-                        <img  class="rounded blacknwhite" src="/public/images/whattheflick.png">
+                        <img class="rounded blacknwhite" src="/public/images/whattheflick.png" alt="site screenshot">
                     </a>
                 </div>
                 <!-- Links -->
-                <div class="col col-3 center-text project-style">
+                <div class="col col-3 text-center project-style icon-padding">
                     <div class="row">
                         <div class="col col-12 head-text icon-title">LINKS</div>
                     </div>
@@ -180,15 +195,20 @@
             </div>
             <div class="project-style">
                 <div class="row">
-                    <div class="col col-12 center-text project-background head-text">DESCRIPTION</div>
+                    <div class="col col-12 text-center project-background head-text title-pad">DESCRIPTION</div>
                 </div>
                 <div class="row">
-                    <div class="col col-12 center-text project-background description-pad">
+                    <div class="col col-12 text-center project-background text-pad">
                         <p class="text-content">
-                            This web app is a game that pulls movie posters from themoviedb.org. The user must choose
-                            the correct title of the movie, from 4 multiple options. They are allowed 3 hint clicks and
-                            gain a point for each correct answer. The game continues until the user gets a movie
-                            incorrect. The game is mobile responsive as well.
+                            This web app is group project I did with
+                            <a href="http://www.forzaesotico.com/" target="_blank" rel="noreferrer noopener">
+                                George Danforth
+                            </a>,
+                            <a href="http://alstonhsu.com" target="_blank" rel="noreferrer noopener">Alston Hsu</a>, and
+                            <a href="http://jjspetseris.com" target="_blank" rel="noreferrer noopener">JJ Spetseris</a>.  It
+                            is a game where players guess a movie title based on movie posters from the movieDB.org API.
+                            We used ExpressJS and NodeJS for our back-end, and PostgreSQL to store high scores.  It is
+                            styled using LESS, and animated with vanilla JavaScript.
                         </p>
                     </div>
                 </div>
@@ -209,19 +229,19 @@
     </div>
     <div id="projects" class="row">
         <div class="col col-2"></div>
-        <div class="col col-8 center-text project-background project-style">
+        <div class="col col-8 text-center project-background project-style">
             <div class="project-style">
                 <div class="row">
-                    <div class="col col-12 center-text project-background">
-                        <h3 class="project-title push-middle">Project#2: Pixalage</h3>
+                    <div class="col col-12 text-center project-background proj-pad">
+                        <h3 class="project-title push-middle">Project #2: Pixalage</h3>
                     </div>
                 </div>
             </div>
             <div class="row project-style">
                 <!-- Technology -->
-                <div class="col col-3 center-text project-style project-background">
+                <div class="col col-3 text-center project-style project-background icon-padding">
                     <div class="row">
-                        <div class="col col-12 head-text icon-title">Technology</div>
+                        <div class="col col-12 head-text icon-title">TECHNOLOGY</div>
                     </div>
                     <!-- icon container -->
                     <div class="row">
@@ -230,7 +250,9 @@
                             <div class="row icon-size around">
                                 <div class="col col-12 push-center">
                                     <div class="row">
-                                        <div class="col col-12 push-center icon-padding"><i class="devicon-react-original-wordmark"></i></div>
+                                        <div class="col col-12 push-center icon-padding">
+                                            <i class="devicon-react-original-wordmark"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -238,13 +260,13 @@
                     </div>
                 </div>
                 <!-- Screenshot -->
-                <div class="col col-6 center-text project-background push-middle icon-padding">
-                    <img  class="rounded blacknwhite" src="/public/images/pixalage.png">
+                <div class="col col-6 text-center project-background push-middle icon-padding">
+                    <img class="rounded blacknwhite" src="/public/images/pixalage.png" alt="site screenshot">
                 </div>
                 <!-- Links -->
-                <div class="col col-3 center-text project-style">
+                <div class="col col-3 text-center project-style icon-padding">
                     <div class="row">
-                        <div class="col col-12 head-text icon-title">Links</div>
+                        <div class="col col-12 head-text icon-title">LINKS</div>
                     </div>
                     <!-- icon container -->
                     <div class="row">
@@ -273,15 +295,14 @@
             </div>
             <div class="project-style">
                 <div class="row">
-                    <div class="col col-12 center-text project-background head-text">DESCRIPTION</div>
+                    <div class="col col-12 text-center project-background head-text">DESCRIPTION</div>
                 </div>
                 <div class="row">
-                    <div class="col col-12 center-text project-background description-pad">
+                    <div class="col col-12 text-center project-background text-pad">
                         <p class="text-content">
-                            Pixalage is a personal project i created while attending DigitalCrafts Coding Bootcamp. The
-                            goal of this project was mainly to allow me to get familiar with React. The app is built
-                            using React and the Pixabay API. It creates an API query based on user selected inputs
-                            (color, category, colorScheme) and returns a 'collage' of images that match the query.
+                            Pixalage is a personal project I created while attending Digital Crafts.  My main goal for this
+                            project was to get familiar with React.  It creates an API query based on user selected inputs
+                            (Color, Category, Color Scheme) and returns a collage of images from the Pixabay API.
                         </p>
                     </div>
                 </div>
@@ -302,19 +323,19 @@
     </div>
     <div id="projects" class="row">
         <div class="col col-2"></div>
-        <div class="col col-8 center-text project-background project-style">
+        <div class="col col-8 text-center project-background project-style">
             <div class="project-style">
                 <div class="row">
-                    <div class="col col-12 center-text project-background">
-                        <h3 class="project-title push-middle">Project#3: Timbergrove Flight Plan</h3>
+                    <div class="col col-12 text-center project-background proj-pad">
+                        <h3 class="project-title push-middle">Project #3: Timbergrove Flight Plan</h3>
                     </div>
                 </div>
             </div>
             <div class="row project-style">
                 <!-- Technology -->
-                <div class="col col-3 center-text project-style project-background icon-padding">
+                <div class="col col-3 text-center project-style project-background icon-padding">
                     <div class="row">
-                        <div class="col col-12 head-text icon-title">Technology</div>
+                        <div class="col col-12 head-text icon-title">TECHNOLOGY</div>
                     </div>
                     <!-- icon container -->
                     <div class="row">
@@ -323,8 +344,12 @@
                             <div class="row icon-size around">
                                 <div class="col col-12 push-center">
                                     <div class="row">
-                                        <div class="col col-6 push-center icon-padding"><i class="devicon-express-original-wordmark"></i></div>
-                                        <div class="col col-6 push-center icon-padding"><i class="devicon-react-original-wordmark"></i></div>
+                                        <div class="col col-6 push-center icon-padding">
+                                            <i class="devicon-express-original-wordmark"></i>
+                                        </div>
+                                        <div class="col col-6 push-center icon-padding">
+                                            <i class="devicon-react-original-wordmark"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -332,7 +357,7 @@
                             <div class="row icon-size around">
                                 <div class="col col-12">
                                     <div class="row around">
-                                        <div class="col col-6 push-center icon-padding"><i class="devicon-nodejs-plain"></i></div>
+                                        <div class="col col-6 push-center icon-padding"><i class="devicon-nodejs-plain-wordmark"></i></div>
                                         <div class="col col-6 push-center icon-padding"><i class="devicon-mongodb-plain-wordmark"></i></div>
                                     </div>
                                 </div>
@@ -341,13 +366,13 @@
                     </div>
                 </div>
                 <!-- Screenshot -->
-                <div class="col col-6 center-text project-background push-middle icon-padding">
-                    <img  class="rounded blacknwhite" src="/public/images/drone-2219251_640.jpg">
+                <div class="col col-6 text-center project-background push-middle icon-padding">
+                    <img class="rounded blacknwhite" src="/public/images/drone-2219251_640.jpg" alt="site screenshot">
                 </div>
                 <!-- Links -->
-                <div class="col col-3 center-text project-style">
+                <div class="col col-3 text-center project-style icon-padding">
                     <div class="row">
-                        <div class="col col-12 head-text icon-title">Links</div>
+                        <div class="col col-12 head-text icon-title">LINKS</div>
                     </div>
                     <!-- icon container -->
                     <div class="row">
@@ -374,10 +399,10 @@
             </div>
             <div class="project-style">
                 <div class="row">
-                    <div class="col col-12 center-text project-background head-text">DESCRIPTION</div>
+                    <div class="col col-12 text-center project-background head-text">DESCRIPTION</div>
                 </div>
                 <div class="row">
-                    <div class="col col-12 center-text project-background description-pad">
+                    <div class="col col-12 text-center project-background text-pad">
                         <p class="text-content">
                             This is an ongoing project that will be updated when finished.
                         </p>
@@ -398,79 +423,102 @@
         </div>
         <div class="col col-2"></div>
     </div>
-    <div id="contact" class="row around">
+    <div class="row around">
         <div class="col col-2"></div>
-        <div class="col col-8 center-text head-text"><h3 class="mov-title">Contact Paul</h3></div>
+        <div class="col col-8 text-center head-text"></div>
         <div class="col col-2"></div>
     </div>
-    <div class="row">
+    <div  id="contact" class="row">
         <div class="col col-2"></div>
-        <div class="col col-8">
-            <div>
-                <form action="/sendMsg" method="post">
-                    Name: <input type="text" name="name">
-                    E-mail: <input type="email" name="email">
-                    Phone: <input type="tel" name="phone">
-                    <label>Message</label>
-                    <textarea name="msg"></textarea>
-                    <input type="submit">
+        <div class="col col-8 project-background project-style">
+            <div class="project-style project-background text-center">
+                <div class="proj-pad"><h3 class="mov-title head-text icon-title">Contact Paul</h3></div>
+                <form class="form-padding text-content" action="/sendMsg" method="post">
+                    <input type="text" placeholder="Name" name="name" minlength="1" maxlength="40">
+                    <input type="email" placeholder="E-mail" name="email">
+                    <input type="tel" placeholder="Phone" name="phone" minlength="10" maxlength="12">
+                    <textarea name="msg" placeholder="Type your message..." minlength="5" maxlength="250"></textarea>
+                    <div class="submit-div"><input type="submit"></div>
                 </form>
             </div>
         </div>
         <div class="col col-2"></div>
     </div>
-    <!-- languages -->
-    <div class="row">
-        <div class="col col-2"></div>
-        <div class="col col-8 center-text"><h3 class="mov-title">Behind the Scenes: Other Tech I've used</h3></div>
-        <div class="col col-2"></div>
-        <div class="col col-2"></div>
-        <div class="col col-8 center-text">
-            <div class="col col-12">
-                <i class="icon-html5"></i>
-                <i class="icon-css3"></i>
-                <i class="icon-javascript"></i>
-                <i class="icon-nodejs"></i>
-                <i class="icon-postgres-alt"></i>
-            </div>
-        </div>
-        <div class="col col-2"></div>
-    </div>
     <!--Footer-->
-    <div class="row blue">
-        <div class="col col-4"></div>
-        <div class="col col-4 bordered">
-            <div class="row text-center">
-                <div class="col col-12 head-text"><p>Connect</p></div>
+    <div class="row project-background">
+        <div class="col col-2"></div>
+        <div class="col col-8 project-style">
+            <div class="row">
+                <div class="col col-2"></div>
+                <div class="col col-8 head-text text-center push-center">CONNECT</div>
+                <div class="col col-2"></div>
             </div>
             <div class="row">
-                <ul class="list">
-                    <li><a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/public/images/icons/svg/009-linkedin-logo.svg"
-                             width="50" height="50"></a></li>
-                    <li><a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/public/images/icons/svg/006-github-1.svg"
-                             width="50" height="50"></a></li>
-                </ul>
+                <div class="col col-2"></div>
+                <div class="col col-8">
+                    <div class="row around icon-size text-center">
+                        <div class="col col-6 icon-padding push-center">
+                            <a href="https://www.linkedin.com/in/paul-como-8b988513b/" class="icon-link text-center"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="flaticon-social"></i>
+                            </a>
+                        </div>
+                        <div class="col col-6 icon-padding push-center">
+                            <a href="https://github.com/pcomo24" class="icon-link" target="_blank" rel="noopener noreferrer">
+                                <i class="flaticon-social-media"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-12 text-center text-content credit-style">
+                            icons by
+                            <a href="https://www.flaticon.com/free-icon/github_23807" target="_blank" class="icon-link"
+                               rel="noopener noreferrer">
+                                'icomoon'
+                            </a>
+                            and
+                            <a href="https://www.flaticon.com/free-icon/linkedin-logo_34227" target="_blank" class="icon-link"
+                               rel="noopener noreferrer">
+                                'simpleicon'
+                            </a>
+                            at
+                            <a href="https://www.flaticon.com" target="_blank" class="icon-link"
+                               rel="noopener noreferrer">flaticon.com</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
-        <div class="col col-4"></div>
+        <div class="col col-2"></div>
     </div>
-    <script>
-        var elm = document.querySelector('mainNav');
-        var ms = new MenuSpy(elm)
-        function checkscroll() {
-            var contact = document.getElementById('contact');
-            var height = contact.scrollTop;
-            console.log(height);
-        }
-        checkscroll();
-        function colorLink() {
-            document.getElementById('colorContact').style.color = "red";
-        };
 
-        smoothScroll.init({offset: 20, easing: 'easeInOutQuad'});
-        gumshoe.init({offset: 21});
+    <script>
+        //use 'sweetscroll' lib to make scrolling animations
+        document.addEventListener("DOMContentLoaded", () => {
+            const sweetScroll = new SweetScroll({easing: "easeInOutSine"});
+            let hash = window.location.hash;
+            console.log(`hash: ${hash}`);
+            const needsInitialScroll = document.getElementById(hash.substr(1)) != null;
+            console.log(`needsInit: ${needsInitialScroll}`);
+            //if no window location set new location to poster that loads page at #poster
+            if (!needsInitialScroll) {
+                window.location.hash = "poster";
+                hash = window.location.hash;
+            }
+            //after full page load scroll page to #home, if statement to prevent pulling up on refresh of other divs
+            if (window.location.hash === "#poster") {
+                window.addEventListener("load", () => {
+                    hash = '#home';
+                    setTimeout(() => {
+                        sweetScroll.to(hash);
+                    }, 3750);
+                }, false);
+            }
+        }, false);
+        //scroll spy using 'menuspy' library
+        var elm = document.querySelector('#main-header');
+        var ms = new MenuSpy(elm);
     </script>
 </body>
 </html>

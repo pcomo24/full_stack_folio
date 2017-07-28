@@ -4,14 +4,14 @@ const app = express();
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const aws = require('aws-sdk');
-
+const menuspy = require('menuspy');
 
 //set static folder
 app.use('/public', express.static('public'));
 app.use('/smooth', express.static('node_modules/smooth-scroll/dist/js'));
-app.use('/gumshoe', express.static('node_modules/gumshoe/dist/js'));
 app.use('/anime', express.static('node_modules/animejs'));
 app.use('/menuspy', express.static('node_modules/menuspy/dist'));
+
 //use handlebars
 app.set('view engine', 'hbs');
 //body parser
@@ -48,7 +48,7 @@ app.post('/sendMsg', function (req, res) {
         Message: {
             Subject: {
                 Charset: 'UTF-8',
-                Data: 'A message from your portfolio'
+                Data: 'Message from portfolio'
             },
             Body: {
                 Html: {

@@ -141,11 +141,11 @@ body {
   color: #313439;
   background-color: transparent; }
 
-a {
+/*a {
   color: #3794de; }
 
 a:hover {
-  color: #f03c69; }
+  color: #f03c69; }*/
 
 h1.title, h1, h2, h3, h4, h5, h6 {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -778,9 +778,9 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  background-color: #fff;
-  border-color: #1c86f2;
-  box-shadow: 0 0 1px #1c86f2 inset; }
+  /*background-color: #fff;*/
+  /*border-color: #1c86f2;
+  box-shadow: 0 0 1px #1c86f2 inset; */}
 
 input.error,
 textarea.error,
