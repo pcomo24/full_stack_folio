@@ -2,7 +2,6 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
 const aws = require('aws-sdk');
 
 //set static folder
