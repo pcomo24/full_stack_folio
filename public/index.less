@@ -1,5 +1,6 @@
 @color-primary-4: #000;
 @color-secondary-1-2: #91C499;
+@myWhite: white;
 
 @header-font: 'Yanone Kaffeesatz', sans-serif;
 @text-font-3: 'Cutive Mono', monospace;
@@ -86,15 +87,15 @@ nav {
   padding: 2vh 2vw;
   position: fixed;
   top: 50%;
-  @media(max-width : 768px) {
+  @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(max-width : 768px) {
     display: none;
   }
   a {
-    color: white;
+    color: @myWhite;
     font-family: @section-font;
     display: block;
     text-decoration: none;
-    @media(max-width : 768px) {
+    @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(max-width : 768px) {
       display: none;
     }
   }
@@ -111,8 +112,8 @@ nav {
 }
 
 .project-style {
-  border: solid white 2px;
-  color: white;
+  border: solid @myWhite 2px;
+  color: @myWhite;
 }
 
 .project-background {
@@ -121,7 +122,7 @@ nav {
 
 .icon-size {
   font-size: 5vw;
-  @media(max-width: 768px) {
+  @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(max-width: 768px) {
     font-size: 10vw;
   }
 }
@@ -132,7 +133,7 @@ nav {
 }
 
 .icon-link {
-  color: white;
+  color: @myWhite;
   text-decoration: none;
   :hover {
     color: @color-secondary-1-2;
@@ -146,7 +147,7 @@ nav {
 .project-title {
   font-size: 3vw;
   padding: 1vw;
-  @media(max-width: 768px){
+  @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(max-width: 768px){
     font-size: 7vw;
   }
 }
@@ -154,7 +155,7 @@ nav {
 .icon-title {
   font-size: 2vw;
   padding: .5vw;
-  @media(max-width: 768px) {
+  @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(max-width: 768px) {
     font-size: 5vw;
   }
 }
@@ -174,19 +175,19 @@ nav {
 
 input, textarea {
   width: 100%;
-  color: white;
+  color: @myWhite;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid @myWhite;
   background-color: @color-primary-4;
   :focus {
     box-shadow: none;
-    color: white;
+    color: @myWhite;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid @myWhite;
     background-color: @color-primary-4;
   }
 }
@@ -200,11 +201,11 @@ input[type=submit] {
   margin: 0 auto;
   width: 10vw;
   height: 10vh;
-  border: 2px solid white;
+  border: 2px solid @myWhite;
   border-radius: 0;
   align-content: center;
   padding: 10px;
-  @media(max-width: 768px) {
+  @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(max-width: 768px) {
     width: auto;
     height: auto;
   }
@@ -220,7 +221,9 @@ input[type=submit] {
   font-family: @text-font-3;
   font-size: 10px;
 }
-
+.group-link {
+  color: @color-secondary-1-2;
+}
 #dc-link {
   color: @color-secondary-1-2;
 }

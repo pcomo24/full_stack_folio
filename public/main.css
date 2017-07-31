@@ -77,7 +77,7 @@ nav {
   position: fixed;
   top: 50%;
 }
-@media (max-width: 768px) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   nav {
     display: none;
   }
@@ -88,7 +88,7 @@ nav a {
   display: block;
   text-decoration: none;
 }
-@media (max-width: 768px) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   nav a {
     display: none;
   }
@@ -113,7 +113,7 @@ nav a {
 .icon-size {
   font-size: 5vw;
 }
-@media (max-width: 768px) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   .icon-size {
     font-size: 10vw;
   }
@@ -136,7 +136,7 @@ nav a {
   font-size: 3vw;
   padding: 1vw;
 }
-@media (max-width: 768px) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   .project-title {
     font-size: 7vw;
   }
@@ -145,7 +145,7 @@ nav a {
   font-size: 2vw;
   padding: .5vw;
 }
-@media (max-width: 768px) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   .icon-title {
     font-size: 5vw;
   }
@@ -193,7 +193,7 @@ input[type=submit] {
   align-content: center;
   padding: 10px;
 }
-@media (max-width: 768px) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (max-width: 768px) {
   input[type=submit] {
     width: auto;
     height: auto;
@@ -206,6 +206,9 @@ input[type=submit] {
 .credit-style {
   font-family: 'Cutive Mono', monospace;
   font-size: 10px;
+}
+.group-link {
+  color: #91C499;
 }
 #dc-link {
   color: #91C499;
