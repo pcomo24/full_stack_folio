@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="public/flaticon-font/flaticon.css">
     <!-- Animations -->
+    <script src="../public/kube/dist/js/kube.js"></script>
     <script src="../public/sweet-scroll.min.js"></script>
     <script src="../public/menuspy.js"></script>
 </head>
@@ -76,7 +77,7 @@
                 <div class="row">
                     <div class="col col-12 text-pad">
                         <h3 class="head-text mov-title">ABOUT</h3>
-                        <p class="text-content">My name is Paul Como.  I am a former college athlete, with a B.S. in
+                        <p class="text-content">Hi, My name is Paul Como.  I am a former college athlete, with a B.S. in
                             Kinesiology.  My journey to web development began one day when I discovered the code editor
                             for styling a Tumblr page and found myself oddly intrigued.<br>After spending
                             the next week doing HTML and CSS tutorials, I realized I had a real appreciation for code,
@@ -388,7 +389,7 @@
                             <!-- icon ROW 2 -->
                             <div class="row icon-size">
                                 <div class="col col-12 push-center icon-padding">
-                                    <a href="" class="icon-link" target="_blank" rel="noopener noreferrer">
+                                    <a  class="icon-link" target="_blank" rel="noopener noreferrer" onclick="$.modalwindow({ target: '#ui-modal', url: 'modal.html' });">
                                         <i class="devicon-ubuntu-plain"></i>
                                     </a>
                                 </div>
@@ -396,6 +397,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="my-modal" class="modal-box hide">
+              <div class="modal">
+                  <span class="close" data-action="modal-close"></span>
+                  <div class="modal-header">Modal Header</div>
+                  <div class="modal-body">...</div>
+              </div>
             </div>
             <div class="project-style">
                 <div class="row">
