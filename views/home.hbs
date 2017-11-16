@@ -30,6 +30,11 @@
                 <li><a href="#aboutme" data-scroll>ABOUT</a></li>
                 <li><a href="#projects" data-scroll>PROJECTS</a></li>
                 <li><a href="#contact" data-scroll>CONTACT/CONNECT</a></li>
+                <li><a href="https://drive.google.com/open?id=1F_vvZzOMQdH54KTruXdnNGjiaYWKQ7Y8"
+                       target="_blank" rel="noopener noreferrer">
+                  <div class="resume-link">RESUME</div>
+                  </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -77,13 +82,13 @@
                 <div class="row">
                     <div class="col col-12 text-pad">
                         <h3 class="head-text mov-title">ABOUT</h3>
-                        <p class="text-content">Hi, My name is Paul Como.  I am a former college athlete, with a B.S. in
+                        <p class="text-content">Hi,   My name is Paul Como.  I am a former college athlete, with a B.S. in
                             Kinesiology.  My journey to web development began one day when I discovered the code editor
                             for styling a Tumblr page and found myself oddly intrigued.<br>After spending
                             the next week doing HTML and CSS tutorials, I realized I had a real appreciation for code,
                             and I started searching for more in-depth learning materials.  That search led me to
                             <a href="http://www.digitalcrafts.com/" target="_blank" rel="noreferrer noopener" id="dc-link">
-                                DigitalCrafts</a>, a fully-immersive coding bootcamp in Houston, which I graduated
+                                DigitalCrafts</a>, a fully immersive coding bootcamp in Houston, which I graduated
                             from in August 2017.<br>Besides programming, I also enjoy making music in Ableton Live,
                             exercising (most weeks), and cooking.
                         </p>
@@ -198,17 +203,17 @@
                 <div class="row">
                     <div class="col col-12 text-center project-background text-pad">
                         <p class="text-content">
-                            This web app is group project I did with
+                            This web app is a group project I did with
                             <a class="group-link" href="http://www.forzaesotico.com/" target="_blank" rel="noreferrer noopener">
                                 George Danforth</a>,
                             <a class="group-link" href="http://alstonhsu.com" target="_blank" rel="noreferrer noopener">
                                 Alston Hsu</a>, and
                             <a class="group-link" href="http://jjspetseris.com" target="_blank" rel="noreferrer noopener">
                                 JJ Spetseris</a>.  It is a game where players guess a movie title based on movie posters
-                            from the movieDB.org API.  We used Express and Node.js for our back-end, and PostgreSQL to
-                            store high scores.  It is styled using Less, and animated with vanilla JavaScript.  In this
+                            from the movieDB.org API.  We used Express and Node.js for our back end, and PostgreSQL to
+                            store high scores.  It is styled using Less, and animated with JavaScript.  In this
                             project I worked on the front-end,building templates with HBS, and styling the pages,
-                            and also set up the API calls.  This was a 40 hour project.
+                            and also set up the API calls.  This was a 40-hour project.
                         </p>
                     </div>
                 </div>
@@ -261,7 +266,10 @@
                 </div>
                 <!-- Screenshot -->
                 <div class="col col-6 text-center project-background push-middle icon-padding">
+                  <a href="https:/pixalage.herokuapp.com/" class="icon-link" target="_blank"
+                     rel="noopener noreferrer">
                     <img class="rounded blacknwhite" src="/public/images/pixalage.png" alt="site screenshot">
+                  </a>
                 </div>
                 <!-- Links -->
                 <div class="col col-3 text-center project-style icon-padding">
@@ -301,7 +309,7 @@
                     <div class="col col-12 text-center project-background text-pad">
                         <p class="text-content">
                             Pixalage is a personal project I created while attending DigitalCrafts.  My main goal for this
-                            project was to become familiar with React.  It creates an API query based on user selected inputs
+                            project was to become familiar with React.  It creates an API query based on user-selected inputs
                             (Color, Category, Color Scheme) and returns a collage of images from the Pixabay API.  This
                             project took about 40 hours.
                         </p>
@@ -377,11 +385,11 @@
                     </div>
                     <!-- icon container -->
                     <div class="row">
-                        <div class="col col-12">
+                        <div class="col col-12" id="modalTrigParent">
                             <!-- icon ROW 1 -->
                             <div class="row icon-size around">
                                 <div class="col col-12 push-center icon-padding">
-                                    <a href="" class="icon-link" target="_blank" rel="noopener noreferrer">
+                                    <a class="icon-link" target="_blank" rel="noopener noreferrer">
                                         <i class="devicon-github-plain"></i>
                                     </a>
                                 </div>
@@ -389,7 +397,7 @@
                             <!-- icon ROW 2 -->
                             <div class="row icon-size">
                                 <div class="col col-12 push-center icon-padding">
-                                    <a  class="icon-link" target="_blank" rel="noopener noreferrer" onclick="$.modalwindow({ target: '#ui-modal', url: 'modal.html' });">
+                                    <a class="icon-link" target="_blank" rel="noopener noreferrer">
                                         <i class="devicon-ubuntu-plain"></i>
                                     </a>
                                 </div>
@@ -398,11 +406,20 @@
                     </div>
                 </div>
             </div>
-            <div id="my-modal" class="modal-box hide">
-              <div class="modal">
-                  <span class="close" data-action="modal-close"></span>
-                  <div class="modal-header">Modal Header</div>
-                  <div class="modal-body">...</div>
+            <div id="myModal" class="modalClass">
+              <div class="modalContent">
+                  <div class="closeMyModal"><span>&times;</span></div>
+                  <div class="head-text icon-title">SORRY!</div>
+                  <p class="text-content">Unfortunately, I cannot share the code
+                     or live application for this project due to a
+                     non-disclosure agreement with
+                     Timbergrove.
+                  </p>
+                  <div class="head-text icon-title">BUT...</div>
+                  <p class="text-content">The upside is our code will be used in a
+                  real-world application, and I gained a valuable reference which
+                  I can provide upon request.
+                  </p>
               </div>
             </div>
             <div class="project-style">
@@ -417,7 +434,7 @@
                                 Timbergrove</a>.  It tracks a drone's flight pattern and displays relevant data in real time.
                             It is built with MongoDB, Node.js, Express, AWS IoT, and React.  My role in the project was
                             to build the interface. I used React, Material UI, and React Grid System to create the
-                            front-end.  There was a huge collaborative effort to get our data to work with mapbox to
+                            front end.  There was a huge collaborative effort to get our data to work with mapbox to
                             track the drone's flight pattern, which forced us over the original 80 hours we thought we
                             would spend on this project.
                         </p>
@@ -472,13 +489,20 @@
                 <div class="col col-2"></div>
                 <div class="col col-8">
                     <div class="row around icon-size text-center">
-                        <div class="col col-6 icon-padding push-center">
+                        <div class="col col-4 icon-padding push-center">
                             <a href="https://www.linkedin.com/in/paul-como-8b988513b/" class="icon-link text-center"
                                target="_blank" rel="noopener noreferrer">
                                 <i class="flaticon-social"></i>
                             </a>
                         </div>
-                        <div class="col col-6 icon-padding push-center">
+                        <div class="col col-4 icon-padding push-center">
+                            <a href="https://drive.google.com/file/d/1F_vvZzOMQdH54KTruXdnNGjiaYWKQ7Y8/view"
+                            class="icon-link text-center"
+                             target="_blank" rel="noopener noreferrer">
+                                <div id="resume-link">RESUME</div>
+                            </a>
+                        </div>
+                        <div class="col col-4 icon-padding push-center">
                             <a href="https://github.com/pcomo24" class="icon-link" target="_blank" rel="noopener noreferrer">
                                 <i class="flaticon-circle"></i>
                             </a>
@@ -502,8 +526,8 @@
                         </div>
                     </div>
                 </div>
+                <div class="col col-2"></div>
                 </div>
-            </div>
         </div>
         <div class="col col-2"></div>
     </div>
@@ -532,8 +556,34 @@
             }
         }, false);
         //scroll spy using 'menuspy' library
-        var elm = document.querySelector('#main-header');
+        var elm = document.querySelector("#main-header");
         var ms = new MenuSpy(elm);
+
+        //modal functionality
+        var modal = document.getElementById('myModal');
+        //get parent element(div) of elements that listening for click from
+        var modalParent = document.querySelector("#modalTrigParent");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("closeMyModal")[0];
+        //listen on parent element, long as target and click dont match display modal
+        modalParent.addEventListener("click", function(e){
+          console.log(event.target);
+          if (e.target !== e.currentTarget) {
+            modal.style.display = "block";
+          }
+          e.stopPropagation();
+        }, false);
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+        }
+
     </script>
 </body>
 </html>
